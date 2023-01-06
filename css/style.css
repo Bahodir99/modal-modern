@@ -1,0 +1,185 @@
+.modal{
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid #000;
+    position: relative;
+    transform: translateY(-400px);
+    transition: all ease 0.8s;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px grey;
+    background-color: white;
+    z-index: 3;
+}
+.open{
+    transform: translateY(100px);
+}
+.x{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    break-before: 5px;
+    background-color: greenyellow;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.x:active{
+    background-color: red;
+    color: white;
+    box-shadow: 1px 2px 7px 2px green;
+}
+
+
+.btn1{
+    padding: 11px 32px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn1:active{
+    background-color: red;
+    color: white;
+    box-shadow: 1px 2px 7px 2px green;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 330px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: rgba(10, 247, 176, 0.95);
+    box-shadow: 1px 1px 9px 5px rgba(10, 247, 176, 0.95);
+}
+.inp{
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.364);
+    padding-left: 10px;
+    box-shadow: 2px 2px 4px 1px black;
+}
+.inp::placeholder{
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+}
+
+.yes{
+    background-color: blue;
+    color: red;
+}
+
+.no{
+    background-color: red;
+    color: yellow;
+}
+
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.244);
+    display: none;
+    display: none;
+    z-index: 2;
+}
+
+.shadow__open{
+    display: block;
+}
+
+
+.anime{
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 1100px;
+    position: relative;
+}
+
+
+.ball1{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 550px;
+    animation-name: ball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball{
+    25%{
+        border-radius: 50%;
+        background-color: greenyellow;
+    }
+    50%{
+        transform: translateX(700px) rotate(180deg);
+        border-radius: 0;
+        background-color: red;
+    }
+    75%{
+        border-radius: 50%;
+        background-color: greenyellow;
+    }
+    100%{
+        transform: translateX(-150px) rotate(-180deg);
+        background-color: red;
+    }
+
+}
+
+.ball2{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    position: absolute;
+    bottom: -170px;
+    left: 1100px;
+    animation-name: ball2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball2{
+    25%{
+        border-radius: 50%;
+        background-color: greenyellow;
+    }
+    50%{
+        transform: translateX(-700px) rotate(180deg);
+        border-radius: 0;
+        background-color: red;
+    }
+    75%{
+        border-radius: 50%;
+        background-color: greenyellow;
+    }
+    100%{
+        transform: translateX(150px) rotate(-180deg);
+        background-color: red;
+    }
+    
+}
